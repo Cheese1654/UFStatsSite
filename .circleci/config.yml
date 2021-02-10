@@ -2,4 +2,6 @@
 version: 2.1
 machine:
   node:
-    test:
+    jobs:
+      build:
+        test:
