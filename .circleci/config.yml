@@ -1,11 +1,10 @@
 version: 2.1
 jobs:
-  build:
+  Run-With-Node:
     docker:
-      - image: alpine:3.7
+      - image: circleci/node:10-browsers
     steps:
       - run:
-          name: The First Step
+          name: Running In A Container With Node
           command: |
-            npm install
-            npm start
+            node -v
