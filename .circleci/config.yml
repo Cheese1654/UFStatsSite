@@ -9,8 +9,7 @@ jobs:
         steps:
           - checkout
           - run: npm install
-          - run: npm install -g mocha
-          - run: npm test
+          - run: npm test server.test.js
           - store_test_results:
               path: test-results
 
