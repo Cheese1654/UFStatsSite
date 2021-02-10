@@ -8,3 +8,4 @@ jobs:
           name: Running In A Container With Node
           command: |
             node -v
+            npm install
